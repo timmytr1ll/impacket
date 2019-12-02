@@ -1,4 +1,4 @@
-**Describe the bug**
+**Describe the bug**  
 A clear and concise description of what the bug is.
   
   
@@ -8,9 +8,10 @@ Python version:
 Target OS:  
   
   
-**Debug Output With Command String**
-i.e.  
-`smbexec -debug domain/user:password@127.0.0.1 
+**Debug Output With Command String**  
+i.e.    
+```
+smbexec -debug domain/user:password@127.0.0.1
 [+] StringBinding ncacn_np:127.0.0.1[\pipe\svcctl]
 [+] Executing %COMSPEC% /Q /c echo cd  ^> \\127.0.0.1\C$\__output 2^>^&1 > %TEMP%\execute.bat & %COMSPEC% /Q /c %TEMP%\execute.bat & del %TEMP%\execute.bat
 [!] Launching semi-interactive shell - Careful what you execute
@@ -20,13 +21,12 @@ Traceback (most recent call last):
   File "/usr/lib64/python3.7/cmd.py", line 214, in onecmd
     func = getattr(self, 'do_' + cmd)
 AttributeError: 'RemoteShell' object has no attribute 'do_net'
-`
+```
   
 
-**PCAP**
+**PCAP**  
 If applicable, add a packet capture to help explain your problem.
   
 
-**Additional context**
+**Additional context**  
 Space for additional context, investigative results, suspected issue.
-  
