@@ -9,7 +9,8 @@ Target OS:
   
   
 **Debug Output With Command String**  
-i.e.    
+i.e.  
+smbexec -debug domain/user:password@127.0.0.1  
 ```
 smbexec -debug domain/user:password@127.0.0.1
 [+] StringBinding ncacn_np:127.0.0.1[\pipe\svcctl]
